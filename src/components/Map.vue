@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Map",
   props: {
     msg: String
   }
