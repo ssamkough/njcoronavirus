@@ -10,6 +10,10 @@ script:
 install:
   - npm install -g firebase-tools
 notifications:
-  slack: "$SLACK_ACCOUNT:$SLACK_TOKEN"
+  slack:
+    rooms:
+      - secure: "GcKigWAJ3zL8jJiBxSfMIVkB7ge5ud3/y3UqAdIXBL1VEXk142Ce/mt/QLC82VXb1Bv+yjIDIKlUYdGLleitaiChlsm+FkR5vnKB3kGA5HqTjH+61imlqKU2GovZAJfD22OFHKrVOLGNj0YYLCQBM3TXH+B+XhayXeL8Z+ncq/6edWFX7uY1LXnEJQ3sXZtG3r+XfJFpt8eDdK4oLJvrLaq3LDfbk+hL/KBh/hKqRpStB7jeMfj/kxQM+JpN2EtDl8vBVhdMLuCo3WLTcXPvvLXwwV7dukXAnoiKH8SYWB9XP/lgFWTdGhWR1MyWndReQ+bNRM7iudlwnO8d9nCF4OMrqygFmRZNRMvGFtqYVGYDmYq/7n5CIsvHSx4ed4ys8TSYPy+GpafUmg4jjPSS3UOr2alB+EqfvZNlLDTQbH2bYEegvubc8My+8MiOF5tPBTNYoxACuE9oC69QFEStG1pROGJ9sFNdjjFrwZla+KkTAOWeOAkyoIGxo/nhFseeEVTbLIvxbNzgk9dTVZiWrH9B/Nw2cstVKpFOfUgAuX02V0hB0GZZ9xZkVY0pN+EohuosmqSboiK3odeaMOyERI7UHBuZ7O7PXc1apQSneaplhbf1hT7N5fmohfiDFEpGP/swc2nz7IP6p1rpzsyt9J/AvZXqcdoKTWwmpFbcr3M="
+    on_success: always
+    on_failure: always
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
