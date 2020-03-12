@@ -8,7 +8,7 @@ const routes = [
     path: "/",
     name: "Map",
     component: () => import("../views/Home.vue"),
-    meta: { title: "NJ Coronavirus Map - Home" }
+    meta: { title: "NJ Coronavirus Map - Map" }
   },
   {
     path: "/about",
