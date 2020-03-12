@@ -8,13 +8,37 @@ const routes = [
     path: "/",
     name: "Map",
     component: () => import("../views/Home.vue"),
-    meta: { title: "NJ Coronavirus Map" }
+    meta: {
+      title: "NJ Coronavirus Map",
+      metaTags: [
+        {
+          name: "description",
+          content: "Map of Coronavirus cases in New Jersey."
+        },
+        {
+          property: "og:description",
+          content: "Map of Coronavirus cases in New Jersey."
+        }
+      ]
+    }
   },
   {
     path: "/about",
     name: "About",
     component: () => import("../views/About.vue"),
-    meta: { title: "NJ Coronavirus Map - About" }
+    meta: {
+      title: "NJ Coronavirus Map - About",
+      metaTags: [
+        {
+          name: "description",
+          content: "About page for Map of Coronavirus cases in New Jersey."
+        },
+        {
+          property: "og:description",
+          content: "About page for Map of Coronavirus cases in New Jersey."
+        }
+      ]
+    }
   }
 ];
 
@@ -24,6 +48,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title;
+  document.description = to.meta.description;
   next();
 });
 
