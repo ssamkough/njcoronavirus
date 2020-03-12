@@ -31,11 +31,11 @@ const routes = [
       metaTags: [
         {
           name: "description",
-          content: "About page for Map of Coronavirus cases in New Jersey."
+          content: "About for Map of Coronavirus cases in New Jersey."
         },
         {
           property: "og:description",
-          content: "About page for Map of Coronavirus cases in New Jersey."
+          content: "About for Map of Coronavirus cases in New Jersey."
         }
       ]
     }

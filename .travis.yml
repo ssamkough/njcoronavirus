@@ -10,6 +10,6 @@ script:
 install:
   - npm install -g firebase-tools
 notifications:
-  slack: "$SLACK_ACCOUNT":"$SLACK_TOKEN"
+  slack: "$SLACK_ACCOUNT:$SLACK_TOKEN"
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
