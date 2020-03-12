@@ -11,8 +11,6 @@
           target="_blank"
           rel="noopener noreferrer"
         >GitHub</a>
-        <span>&nbsp;|&nbsp;Made by&nbsp;</span>
-        <a href="http://sammysamkough.com/" target="_blank" rel="noopener noreferrer">Sammy Samkough</a>
       </v-col>
     </v-row>
   </v-container>
