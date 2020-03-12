@@ -10,22 +10,20 @@
           disease it causes has been named “coronavirus disease 2019”
           (abbreviated “COVID-19”).
           <br />
+          <br />This website was made to distribute accurate information regarding the
+          Coronavirus cases in New Jersey. Data is updated around every ~8 hours.
           <br />
-          This website was made to distribute accurate information regarding the
-          Coronavirus cases in New Jersey.
-          <br />
-          <br />
-          For more information regarding the Coronavirus, please visit the
+          <br />For more information regarding the Coronavirus, please visit the
           <a
             href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
             target="_blank"
             rel="noopener noreferrer"
-            >Centers for Disease Control and Prevention</a
-          >.
+          >Centers for Disease Control and Prevention</a>.
         </p>
       </v-col>
     </v-row>
-  </v-container></template
+  </v-container>
+</template
 >
 
 <style scoped>
