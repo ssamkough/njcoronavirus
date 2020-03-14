@@ -2,7 +2,7 @@
   <div id="app">
     <v-app id="inspire">
       <div id="nav">
-        <router-link to="/">Map</router-link> |
+        <router-link to="/">Map</router-link>|
         <router-link to="/about">About</router-link>
       </div>
       <v-content>
@@ -47,6 +47,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #b95042;
+  color: #6e859c;
 }
 </style>
