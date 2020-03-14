@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col md="4">
-        <span>Last Updated: March 14, 2020</span>
+        <span>Last Updated: {{date}}</span>
       </v-col>
       <v-col md="4" offset-md="4">
         <span>Code on&nbsp;</span>
@@ -19,8 +19,16 @@
 <script>
 export default {
   name: "Footer",
-  props: {
-    msg: String
+  data() {
+    let today = new Date();
+    const dd = String(today.getDate()).padStart(2, "0");
+    const mm = String(today.getMonth() + 1).padStart(2, "0");
+    const yyyy = today.getFullYear();
+
+    today = mm + "/" + dd + "/" + yyyy;
+    return {
+      date: today
+    };
   }
 };
 </script>
