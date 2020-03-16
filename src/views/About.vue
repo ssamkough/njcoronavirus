@@ -2,34 +2,42 @@
   <v-container>
     <v-row>
       <v-col>
-        <p class="headline about-text">
-          There has been an outbreak of a respiratory disease caused by a novel
-          (new) coronavirus that was first detected in China and which has now
-          been detected in more than 100 locations internationally, including in
-          the United States. The virus has been named “SARS-CoV-2” and the
-          disease it causes has been named “coronavirus disease 2019”
-          (abbreviated “COVID-19”).
-          <br />
-          <br />This website was made to distribute accurate information regarding the
-          Coronavirus cases in New Jersey. Data is updated around every ~8 hours.
-          <br />
-          <br />For more information regarding the Coronavirus, please visit the
+        <blockquote class="custom-blockquote">
+          This website was made to distribute accurate information regarding the
+          Coronavirus cases in New Jersey. Data is updated around every ~6 hours.
+        </blockquote>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <blockquote class="custom-blockquote">
+          If you have any questions, comments or critiques regrading this website, send an email to
+          <a
+            href="mailto:sammysamkough@hotmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >sammysamkough@hotmail.com</a>.
+        </blockquote>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <blockquote class="custom-blockquote">
+          For more information regarding the Coronavirus/Covid-19, please visit the
           <a
             href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
             target="_blank"
             rel="noopener noreferrer"
           >Centers for Disease Control and Prevention</a>.
-        </p>
+        </blockquote>
       </v-col>
     </v-row>
   </v-container>
 </template
 >
 
-<style scoped>
-.about-text {
-  line-height: 40px;
-  margin-left: 20vw;
-  margin-right: 20vw;
-}
-</style>
+<script>
+export default {
+  name: "About"
+};
+</script>
