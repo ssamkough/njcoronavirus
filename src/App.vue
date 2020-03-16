@@ -1,34 +1,36 @@
 <template>
-  <div id="app">
-    <v-app id="inspire">
-      <div id="nav">
-        <router-link to="/">Map</router-link>|
-        <router-link to="/about">About</router-link>
-      </div>
-      <v-content>
-        <router-view />
-      </v-content>
-      <v-footer>
-        <Footer />
-      </v-footer>
-    </v-app>
-  </div>
+  <v-app id="inspire">
+    <Header />
+    <nav id="nav">
+      <router-link to="/covid-19">Covid-19</router-link>|
+      <router-link to="/">Map</router-link>|
+      <router-link to="/about">About</router-link>
+    </nav>
+    <v-content>
+      <router-view />
+    </v-content>
+    <v-footer>
+      <Footer />
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
+    Header,
     Footer
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+#inspire {
+  font-family: Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -42,7 +44,7 @@ export default {
 #nav a {
   font-weight: bold;
   color: #2c3e50;
-  margin: 5px;
+  margin: 10px;
   font-size: large;
 }
 
