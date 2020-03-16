@@ -5,6 +5,24 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/covid-19",
+    name: "Covid",
+    component: () => import("../views/Covid.vue"),
+    meta: {
+      title: "NJ Coronavirus Map - Info",
+      metaTags: [
+        {
+          name: "description",
+          content: "Information about Coronavirus."
+        },
+        {
+          property: "og:description",
+          content: "Information about Coronavirus."
+        }
+      ]
+    }
+  },
+  {
     path: "/",
     name: "Map",
     component: () => import("../views/Home.vue"),
