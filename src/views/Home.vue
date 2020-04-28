@@ -1,16 +1,20 @@
 <template>
-  <div class="map">
-    <Map />
+  <div class="maps">
+    <MainMap />
+    <br />
+    <DayByDayMap />
   </div>
 </template>
 
 <script>
-import Map from "./../components/Map";
+import MainMap from "./../components/maps/MainMap";
+import DayByDayMap from "./../components/maps/DayByDayMap";
 
 export default {
   name: "Home",
   components: {
-    Map
+    MainMap,
+    DayByDayMap
   }
 };
 </script>

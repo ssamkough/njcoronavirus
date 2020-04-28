@@ -3,7 +3,7 @@
     <Header />
     <nav id="nav">
       <router-link to="/covid-19">Covid-19</router-link>|
-      <router-link to="/">Map</router-link>|
+      <router-link to="/">Maps</router-link>|
       <router-link to="/about">About</router-link>
     </nav>
     <v-content>
@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style>
+@import "./styles/styles.css";
 #inspire {
   font-family: Arial;
   -webkit-font-smoothing: antialiased;
