@@ -1,12 +1,12 @@
 <template>
-  <div class="map">
+  <div class="main-map">
     <iframe
       title="New Jersey Coronavirus Cases"
       aria-label="USA new jersey counties choropleth map"
       src="//datawrapper.dwcdn.net/d7N4u/2/"
       scrolling="no"
       frameborder="1"
-      style="width: 0; min-width: 90% !important; padding: 10px;"
+      class="map"
       width="1000"
       height="800"
     ></iframe>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "Map",
+  name: "MainMap",
   props: {
     msg: String
   }
