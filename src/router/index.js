@@ -13,14 +13,14 @@ const routes = [
       metaTags: [
         {
           name: "description",
-          content: "Information about Coronavirus."
+          content: "Information about Coronavirus.",
         },
         {
           property: "og:description",
-          content: "Information about Coronavirus."
-        }
-      ]
-    }
+          content: "Information about Coronavirus.",
+        },
+      ],
+    },
   },
   {
     path: "/",
@@ -31,14 +31,14 @@ const routes = [
       metaTags: [
         {
           name: "description",
-          content: "Map of Coronavirus cases in New Jersey."
+          content: "Map of Coronavirus cases in New Jersey.",
         },
         {
           property: "og:description",
-          content: "Map of Coronavirus cases in New Jersey."
-        }
-      ]
-    }
+          content: "Map of Coronavirus cases in New Jersey.",
+        },
+      ],
+    },
   },
   {
     path: "/about",
@@ -49,19 +49,20 @@ const routes = [
       metaTags: [
         {
           name: "description",
-          content: "About for Map of Coronavirus cases in New Jersey."
+          content: "About for Map of Coronavirus cases in New Jersey.",
         },
         {
           property: "og:description",
-          content: "About for Map of Coronavirus cases in New Jersey."
-        }
-      ]
-    }
-  }
+          content: "About for Map of Coronavirus cases in New Jersey.",
+        },
+      ],
+    },
+  },
 ];
 
 const router = new VueRouter({
-  routes
+  mode: "history",
+  routes,
 });
 
 router.beforeEach((to, from, next) => {
