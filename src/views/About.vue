@@ -4,7 +4,7 @@
       <v-col>
         <blockquote class="custom-blockquote">
           This website was made to distribute accurate information regarding the
-          Coronavirus cases in New Jersey. Data is updated around every ~6 hours.
+          Coronavirus cases in New Jersey. Data is updated around every ~24 hours.
         </blockquote>
       </v-col>
     </v-row>
