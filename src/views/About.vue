@@ -4,7 +4,7 @@
       <v-col>
         <blockquote class="custom-blockquote">
           This website was made to distribute accurate information regarding the
-          Coronavirus cases in New Jersey. Data is updated around every ~24 hours.
+          Coronavirus cases in New Jersey. It has ceased operations since May 2021.
         </blockquote>
       </v-col>
     </v-row>
